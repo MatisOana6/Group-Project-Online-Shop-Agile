@@ -1,0 +1,64 @@
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.historyBlock {
+    margin-bottom: 32px;
+    padding: 20px;
+    border-left: 4px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.historyBlock h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.changeList {
+    list-style-type: disc;
+    padding-left: 24px;
+    color: #444;
+}
+
+.changeList li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.changeList strong {
+    color: #222;
+}
+
+.changeList em {
+    font-style: italic;
+    color: #666;
+}
+
+.filterBox {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.select {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

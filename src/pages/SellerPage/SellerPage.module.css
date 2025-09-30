@@ -1,0 +1,343 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.siteDescription {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.heroImages {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heroImage {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.heroImage:hover {
+    transform: scale(1.05);
+}
+
+.heroContent {
+    max-width: 500px;
+}
+
+.title {
+    font-family: "Updock", cursive;
+    font-size: 80px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.select {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #676767;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transform: scale(1.1);
+}
+
+.cardImage {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 15px;
+    text-align: center;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.cardPrice {
+    font-size: 14px;
+    color: #777;
+}
+
+.rating {
+    color: #09121b;
+    font-size: 1.2rem;
+}
+
+.addProductButton {
+    background-color: #003B6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addProductButton:hover {
+    background-color: #6699CC;
+}
+
+.addProductButton:active {
+    background-color: #003B6D;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modalContent {
+    background-color: #EBEDF3;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #003B6D;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    color: #6699CC;
+}
+
+.editButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.editButton:hover {
+    background-color: #218838;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.feedbackButton {
+    background-color: #003B6D;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.feedbackButton:hover {
+    background-color: steelblue;
+}
+
+.manageSection {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.manageOrdersButton {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.manageOrdersButton:hover {
+    background-color:slategray;
+}
+
+.notificationsBox {
+    margin: 30px auto;
+    padding: 25px 30px;
+    background-color: #fdfdff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddeaff;
+    width: 90%;
+    max-width: 850px;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.notificationsBox h4 {
+    margin: 0 0 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a3c74;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notificationsBox h4::before {
+    font-size: 1.5rem;
+}
+
+.notificationsBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notificationsBox li {
+    background-color: #eef4ff;
+    border-left: 4px solid #003B6D;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.notificationItemIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+.notificationsBox li:hover {
+    background-color: #dbe9ff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notificationsBox li {
+    font-weight: bold;
+}
+
+.notificationMessage {
+    font-weight: bold;
+}
+
+.closeNotificationButton {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: auto;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+

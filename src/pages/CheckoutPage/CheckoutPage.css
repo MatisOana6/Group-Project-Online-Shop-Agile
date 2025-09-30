@@ -1,0 +1,162 @@
+.checkoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.checkoutTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 40rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summaryContainer {
+    width: 20rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summaryTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.summaryItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    color: #374151;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.placeOrderBtn {
+    background-color: #003B6D;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.placeOrderBtn:hover {
+    background-color: #6699CC;
+}
+
+.message {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.message.success {
+    color: #22c55e;
+}
+
+.message.error {
+    color: #ef4444;
+}
+
+.modalContent {
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.modalHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #10b981;
+}
+
+.modalBody {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #374151;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.confirmButton {
+    background-color: #003B6D;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+    background-color: #6699CC;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.modal-backdrop.show {
+    opacity: 0.4;
+}

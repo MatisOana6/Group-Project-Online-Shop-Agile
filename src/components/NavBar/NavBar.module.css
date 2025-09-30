@@ -1,0 +1,118 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guestText {
+    font-size: 16px;
+    color: #e2e8f0;
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.guestIcon {
+    height: 45px;
+    width: 45px;
+    margin-right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.utilityItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.utilityItem:hover {
+    color: black;
+}
+
+.guestText {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.guestIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.adminButton {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.adminButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.logoutButton, .cartButton {
+    background-color: #003B6D;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.cartButton:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+
+

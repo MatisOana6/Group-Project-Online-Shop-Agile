@@ -1,0 +1,91 @@
+.statistics-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+
+.filter-form {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #003B6D;
+}
+
+.form-group select,
+.form-group input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #003B6D;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #6699CC;
+}
+
+.error-message {
+    color: #dc2626;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.statistics-results {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+}
+
+.stats-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.chart-buttons ,button{
+    margin-right: 20px;
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,218 @@
+.account-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #6699CC;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    padding: 0.5rem;
+    border-left: 4px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.sidebar button.active {
+    border-left: 4px solid #003B6D;
+    font-weight: bold;
+    color: #003B6D;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.order-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9fafb;
+}
+
+.order-header:hover {
+    color: #003B6D;
+}
+
+.order-details {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.account-orders {
+    margin-top: 4rem;
+}
+
+.profile-container {
+    max-width: 500px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #003B6D;
+    text-align: center;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+    color: #003B6D;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.profile-form input:focus {
+    border-color: #6699CC;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.profile-form button {
+    background-color: #003B6D;
+    color: white;
+    padding: 0.75rem 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+.profile-form button:hover {
+    background-color: #6699CC;
+}
+
+.success-message {
+    color: #16a34a;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error-message {
+    color: #dc2626;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image-preview {
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.change-image-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+    width: auto;
+    white-space: nowrap;
+}
+
+.change-image-btn:hover {
+    background-color: #6699CC;
+}
+
+.tag-container {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background-color: #6699CC;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    height: auto;
+}
+
+.tag button {
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.tag button:hover {
+    opacity: 0.8;
+}
+
+.profile-form select {
+    width: 525px;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: #1f2937;
+    appearance: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.profile-form select:focus {
+    border-color: #6699CC;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 153, 204, 0.3);
+}
